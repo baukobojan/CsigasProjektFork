@@ -2,6 +2,7 @@ package main;
 
 import java.util.Scanner;
 import modell.Csiga;
+import util.Szinek;
 
 public class CsigaVerseny {
 
@@ -19,9 +20,9 @@ public class CsigaVerseny {
     public CsigaVerseny() {
         csigak = new Csiga[3];
         palya = new String[csigak.length];
-        csigak[0] = new Csiga("piros");
-        csigak[1] = new Csiga("kék");
-        csigak[2] = new Csiga("zöld");
+        csigak[0] = new Csiga(Szinek.PIROS);
+        csigak[1] = new Csiga(Szinek.KEK);
+        csigak[2] = new Csiga(Szinek.ZÖLD);
         indit();
     }
 
