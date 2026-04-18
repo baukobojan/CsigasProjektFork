@@ -1,6 +1,7 @@
 package main;
 
 import modell.Csiga;
+import util.Szinek;
 
 /* MILYEN HIBÁK találhatóak a programban? */
 
@@ -16,8 +17,8 @@ public class CsigakKertben {
         System.out.println("***** Csigá(k) a kertben *****");
         uresKert();
         csigak = new Csiga[3];
-        csigak[0] = new Csiga("piros");
-        csigak[1] = Math.random() > 0.3 ? new Csiga("kék") : null;
+        csigak[0] = new Csiga(Szinek.PIROS);
+        csigak[1] = Math.random() > 0.3 ? new Csiga(Szinek.KEK) : null;
         kert[1][0] = '|';
         kert[1][1] = ' ';
         kert[1][2] = Csiga.getABRA_2().charAt(0);
